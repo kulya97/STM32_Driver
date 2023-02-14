@@ -62,7 +62,7 @@ void LCD_init(void) {
     SSD1289_WriteCmdData(0x0000, 0x0001);
     SSD1289_WriteCmdData(0x0007, 0x0023);
     SSD1289_WriteCmdData(0x0010, 0x0000);
-    Delay(30);
+    //Delay(30);
     SSD1289_WriteCmdData(0x0007, 0x0033);
 #if HORIZONTAL
     SSD1289_WriteCmdData(0x0011, 0x6058);
@@ -72,8 +72,8 @@ void LCD_init(void) {
     SSD1289_WriteCmdData(0x0002, 0x1000);
     SSD1289_WriteCmdData(0x0002, 0x0600);
     SSD1289_WriteCmdData(0x0001, 0x693f);//0x6b3f,显示方向
-    SSD1289_WriteCmdData(0x0028, 0x0006);
-    SSD1289_WriteCmdData(0x0025, 0xf000);//帧率控制
+    SSD1289_WriteCmdData(0x0016, 0xef1c);//每行有效像素
+    SSD1289_WriteCmdData(0x0025, 0xef00);//帧率控制
     SSD1289_WriteCmdData(0x0030, 0x0007);
     SSD1289_WriteCmdData(0x0031, 0x0302);
     SSD1289_WriteCmdData(0x0032, 0x0105);

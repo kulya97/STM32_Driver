@@ -30,7 +30,7 @@
 #define HORIZONTAL 1
 #if HORIZONTAL
 #define Lcd_Width 320
-#define Lcd_Height 240
+#define Lcd_Height 250
 #else
 #define Lcd_Width 240
 #define Lcd_Height 320

@@ -66,11 +66,11 @@ void UserConfigInit() {
 void UserSysInit() {
     LCD_init();
     // LCD_Clear(0xF800);
-//    SSD1289_SetAddress(0, 0, Lcd_Width - 1, Lcd_Height - 1);
-//    SSD1289_DATA;
-//    for (int i = 0; i < 46800 - 1; i++) {
-//        SSD1289_WriteColor(gImage_image[2 * i] << 8 | gImage_image[2 * i + 1]);
-//    }
+    SSD1289_SetAddress(0, 0, Lcd_Width - 1, Lcd_Height - 1);
+    SSD1289_DATA;
+    for (int i = 0; i < 76800 - 1; i++) {
+        SSD1289_WriteColor(gImage_image[2 * i] << 8 | gImage_image[2 * i + 1]);
+    }
     //LCD_Clear(0xF800);
 //    my_driver.draw_pixel = gfx_draw_pixel;
 //    my_driver.fill_rect = NULL;//gfx_fill_rect;
@@ -86,9 +86,9 @@ void UserLoop() {
 //    for (int i = 0; i < 76800 - 1; i++) {
 //        SSD1289_WriteColor(gImage_image[2 * i] << 8 | gImage_image[2 * i + 1]);
 //    }
-    uint16_t static color = 0;
-    color = color + 1000;
-    LCD_Clear(color);
+//    uint16_t static color = 0;
+//    color = color + 1000;
+//    LCD_Clear(color);
     // uint16_t id=LCD_Read_ID();
     //printf("%02x\n",id);
 }

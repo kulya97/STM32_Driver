@@ -17,10 +17,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61555511-37a4-448b-b653-1d6be5b8ee7f" name="Changes" comment="initial commit">
-      <change beforePath="$PROJECT_DIR$/../../ST7735/Example-STM32F103/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ST7735/Example-STM32F103/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ST7735/Example-STM32F103/HardWare/ST7735/ST7735.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../ST7735/Example-STM32F103/HardWare/ST7735/ST7735.c" afterDir="false" />
-    </list>
+    <list default="true" id="61555511-37a4-448b-b653-1d6be5b8ee7f" name="Changes" comment="initial commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -119,7 +116,7 @@
       <workItem from="1676182149989" duration="9135000" />
       <workItem from="1676311428037" duration="350000" />
       <workItem from="1676314508294" duration="936000" />
-      <workItem from="1676371687604" duration="6893000" />
+      <workItem from="1676371687604" duration="9513000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1665499924521</created>
