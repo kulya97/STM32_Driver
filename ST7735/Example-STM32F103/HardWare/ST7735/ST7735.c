@@ -111,16 +111,18 @@ void LCD_init() {
     ST7735S_WriteData(0x07);
     ST7735S_WriteData(0x03);
     ST7735S_WriteData(0x10);
-    ST7735S_WriteCmd(0x2a);
-    ST7735S_WriteData(0x00);
-    ST7735S_WriteData(0x00);
-    ST7735S_WriteData(0x00);
-    ST7735S_WriteData(0x7f);
-    ST7735S_WriteCmd(0x2b);
-    ST7735S_WriteData(0x00);
-    ST7735S_WriteData(0x00);
-    ST7735S_WriteData(0x00);
-    ST7735S_WriteData(0x9f);
+    /***************************/
+//    ST7735S_WriteCmd(0x2a);
+//    ST7735S_WriteData(0x00);
+//    ST7735S_WriteData(0x00);
+//    ST7735S_WriteData(0x00);
+//    ST7735S_WriteData(0x7f);
+//    ST7735S_WriteCmd(0x2b);
+//    ST7735S_WriteData(0x00);
+//    ST7735S_WriteData(0x00);
+//    ST7735S_WriteData(0x00);
+//    ST7735S_WriteData(0x9f);
+    /***************************/
     ST7735S_WriteCmd(0xF0);
     ST7735S_WriteData(0x01);
     ST7735S_WriteCmd(0xF6);
@@ -149,7 +151,7 @@ void ST7735S_SetAddress(uint8_t site_x, uint8_t site_y, uint8_t size_x, uint8_t 
 }
 
 void LCD_Clear(uint16_t Color) {
-    ST7735S_SetAddress(2, 2, Lcd_Width - 1, Lcd_Height - 1);
+    ST7735S_SetAddress(2, 3, Lcd_Width - 1, Lcd_Height - 1);
     for (int i = 0; i < Pixel_Cnt - 1; i++) {
         ST7735S_WriteColor(Color);
     }

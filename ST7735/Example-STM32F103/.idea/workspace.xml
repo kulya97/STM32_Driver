@@ -52,17 +52,12 @@
     "WebServerToolWindowFactoryState": "false",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "E:/Github/STM32_Driver/ST7735/Example-STM32F103",
+    "last_opened_file_path": "E:/Github/STM32_Driver/SSD1289/Example-STM32F103",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="RunManager" selected="OpenOCD Download &amp; Run.STM32F101_LCD.elf">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="STM32F101_LCD.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="STM32F101_LCD" TARGET_NAME="STM32F101_LCD.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="STM32F101_LCD" RUN_TARGET_NAME="STM32F101_LCD.elf">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -113,7 +108,9 @@
       <workItem from="1665499555046" duration="1955000" />
       <workItem from="1665634945898" duration="16000" />
       <workItem from="1675960708711" duration="32000" />
-      <workItem from="1676086584583" duration="17299000" />
+      <workItem from="1676086584583" duration="22259000" />
+      <workItem from="1676125131515" duration="278000" />
+      <workItem from="1676135919037" duration="12000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1665499924521</created>

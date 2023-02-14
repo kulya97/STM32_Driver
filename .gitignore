@@ -1,3 +1,2 @@
-# Project exclude paths
-/SSD1289/Example-STM32F103/cmake-build-debug
-/ST7735/Example-STM32F103/cmake-build-debug
+SSD1289/Example-STM32F103/cmake-build-debug
+ST7735/Example-STM32F103/cmake-build-debug

@@ -25,9 +25,16 @@
 #define SSD1289_WR_LO  GPIOC->BRR=1<<7     //        PC7
 #define SSD1289_RD_LO  GPIOC->BRR=1<<6     //       PC6
 
+
 /**************************************/
+#define HORIZONTAL 1
+#if HORIZONTAL
+#define Lcd_Width 320
+#define Lcd_Height 240
+#else
 #define Lcd_Width 240
 #define Lcd_Height 320
+#endif
 #define Pixel_Cnt Lcd_Width*Lcd_Height
 /**************************************/
 #define Black   0x0000
@@ -38,16 +45,23 @@
 #define Purple  0xF11F
 #define Yellow  0xFFE0
 #define Cyan    0x07FF
+
 /*****************base*********************/
 void SSD1289_WriteCmd(uint16_t CMD);
+
 void SSD1289_WriteData(uint16_t DATA);
+
 void SSD1289_WriteCmdData(uint16_t CMD, uint16_t DATA);
-void SSD1289_WriteColorInit(void);
+
 void SSD1289_WriteColor(uint16_t Color);
-void SSD1289_SetAddress(uint16_t x1,uint16_t y1,uint16_t x2,uint16_t y2);
+
+void SSD1289_SetAddress(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2);
+
 /**************************************/
 void LCD_init(void);
-void LCD_DrawPixel(uint16_t x, uint16_t y,uint16_t Color);
+
+void LCD_DrawPixel(uint16_t x, uint16_t y, uint16_t Color);
+
 void LCD_Clear(uint16_t color);
 /**************************************/
 #endif //STM32F101_LCD_SSD1289_H

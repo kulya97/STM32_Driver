@@ -50,11 +50,11 @@ else ()
 endif ()
 
 include_directories(Core/Inc Drivers/STM32F1xx_HAL_Driver/Inc Drivers/STM32F1xx_HAL_Driver/Inc/Legacy Drivers/CMSIS/Device/ST/STM32F1xx/Include Drivers/CMSIS/Include
-        HardWare/LCD User UICode)
+        HardWare/SSD1289 User UICode)
 
 add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE)
 
-file(GLOB_RECURSE SOURCES "Core/*.*" "Drivers/*.*" "HardWare/LCD/*.*" "User/*.*" "UICode/*.*")
+file(GLOB_RECURSE SOURCES "Core/*.*" "Drivers/*.*" "HardWare/SSD1289/*.*" "User/*.*" "UICode/*.*")
 
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32F103RCTX_FLASH.ld)
 
