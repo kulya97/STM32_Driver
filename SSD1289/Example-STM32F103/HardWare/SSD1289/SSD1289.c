@@ -28,10 +28,10 @@ void SSD1289_WriteColor(uint16_t Color) {
 void SSD1289_SetAddress(uint16_t start_x, uint16_t start_y, uint16_t end_x, uint16_t end_y) {
 #if (HORIZONTAL)
     SSD1289_WriteCmdData(0x0044, (end_y << 8) + start_y);
-    SSD1289_WriteCmdData(0x0045, Lcd_Width - end_x);
-    SSD1289_WriteCmdData(0x0046, Lcd_Width - start_x);
+    SSD1289_WriteCmdData(0x0045, Lcd_Width - end_x - 1);
+    SSD1289_WriteCmdData(0x0046, Lcd_Width - start_x - 1);
     SSD1289_WriteCmdData(0x004E, start_y);
-    SSD1289_WriteCmdData(0x004F, Lcd_Width - start_x);
+    SSD1289_WriteCmdData(0x004F, Lcd_Width - start_x - 1);
     SSD1289_WriteCmd(0x0022);
 #else
     SSD1289_WriteCmdData(0x0044, (end_x << 8) + start_x);
