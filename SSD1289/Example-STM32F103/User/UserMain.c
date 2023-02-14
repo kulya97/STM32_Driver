@@ -66,8 +66,7 @@ void UserConfigInit() {
 void UserSysInit() {
     LCD_init();
     // LCD_Clear(0xF800);
-    SSD1289_SetAddress(0, 0, Lcd_Width - 1, Lcd_Height - 1);
-    SSD1289_DATA;
+    SSD1289_SetAddress(0, 0, Lcd_Width, Lcd_Height);
     for (int i = 0; i < 76800 - 1; i++) {
         SSD1289_WriteColor(gImage_image[2 * i] << 8 | gImage_image[2 * i + 1]);
     }

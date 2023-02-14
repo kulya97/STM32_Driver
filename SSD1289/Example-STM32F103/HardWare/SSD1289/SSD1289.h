@@ -30,7 +30,7 @@
 #define HORIZONTAL 1
 #if HORIZONTAL
 #define Lcd_Width 320
-#define Lcd_Height 250
+#define Lcd_Height 240
 #else
 #define Lcd_Width 240
 #define Lcd_Height 320
@@ -55,7 +55,7 @@ void SSD1289_WriteCmdData(uint16_t CMD, uint16_t DATA);
 
 void SSD1289_WriteColor(uint16_t Color);
 
-void SSD1289_SetAddress(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2);
+uint8_t SSD1289_SetAddress(uint16_t pos_x, uint16_t pos_y, uint16_t window_width, uint16_t window_high);
 
 /**************************************/
 void LCD_init(void);
